@@ -17,6 +17,8 @@
       "cmp-container-id",
       "sliding-popup",
       "rw_alert_cookies",
-      "js-gdpr-consent-banner"
+      "js-gdpr-consent-banner",
+      "cookies_popup_container",
+      "site-message--banner"
    ]
 }
