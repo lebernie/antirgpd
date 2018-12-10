@@ -19,6 +19,7 @@
       "rw_alert_cookies",
       "js-gdpr-consent-banner",
       "cookies_popup_container",
-      "site-message--banner"
+      "site-message--banner",
+      "cc-banner"
    ]
 }
