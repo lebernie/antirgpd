@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Anti RGPD
-// @version     4
+// @version     5
 // @grant       GM.setValue
 // @grant       GM.getValue
 // @grant       GM.listValues
@@ -9,6 +9,7 @@
 // @grant       GM.info
 // @updateURL   https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js
 // @downloadURL https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js
+// @noframes
 // @include     *
 // ==/UserScript==
 
