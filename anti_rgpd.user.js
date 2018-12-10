@@ -4,7 +4,8 @@
 // @grant       GM.setValue
 // @grant       GM.getValue
 // @grant       GM.xmlHttpRequest
-// @updateURL   
+// @updateURL   https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.meta.js
+// @downloadURL https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js
 // ==/UserScript==
 
 var _conf = null;
@@ -16,7 +17,7 @@ async function load_conf() {
             log("conf not found");
             GM.xmlHttpRequest({
                 method: "GET",
-                url: "https://gist.githubusercontent.com/squady/704bf0e0bbe6930658f459bb62da2b3b/raw/67e0f9920af76b33e0b2086fc337e55f214a11e0/anti-rgpd",
+                url: "https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.json",
                 onload: function(response) {
                     GM.setValue("antiRGPD_config", response.responseText);
                     resolve(response.responseText);
