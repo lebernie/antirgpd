@@ -1,0 +1,21 @@
+{
+   "class_to_remove":[
+      "qc-cmp-ui-showing"
+   ],
+   "class_to_delete":[
+      "qc-cmp-ui-container",
+      "tarteaucitronAlertBigBottom",
+      "obs_cnil",
+      "truste_box_overlay",
+      "truste_overlay",
+      "cookiesBannerWrap"
+   ],
+   "div_to_delete":[
+      "cookie-notice",
+      "cookieChoiceInfo",
+      "cookie_policy",
+      "cmp-container-id",
+      "sliding-popup",
+      "rw_alert_cookies"
+   ]
+}
