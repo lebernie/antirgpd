@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Anti RGPD
-// @version     3
+// @version     4
 // @grant       GM.setValue
 // @grant       GM.getValue
 // @grant       GM.listValues
@@ -13,6 +13,7 @@
 
 var _conf = null;
 var _debug = true;
+var _conf_url = "https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.json"
 
 async function load_conf() {
     return new Promise(async function(resolve, reject) {
@@ -39,7 +40,7 @@ async function load_conf() {
             log("downloading latest conf...");
             GM.xmlHttpRequest({
                 method: "GET",
-                url: "https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.json",
+                url: _conf_url,
                 onload: function(response) {
                     GM.setValue("antiRGPD_config", response.responseText);
                     GM.setValue("antiRGPD_last_update", new Date());
