@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name        Anti RGPD
-// @version     1
+// @version     2
 // @grant       GM.setValue
 // @grant       GM.getValue
 // @grant       GM.xmlHttpRequest
-// @updateURL   https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.meta.js
+// @updateURL   https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js
 // @downloadURL https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js
+// @include     *
 // ==/UserScript==
 
 var _conf = null;
@@ -35,12 +36,10 @@ async function load_conf() {
 async function clear_rgpd() {
     if (!_conf) {
         log("not configured");
-        log(conf);
         _conf = JSON.parse(await load_conf());
 
     }
     _conf.class_to_remove.forEach(function(element) {
-        // $('.'+element).removeClass(element);
         var elements = document.getElementsByClassName(element);
         for (let item of elements) {
             log("remove class " + element);
