@@ -1,5 +1,6 @@
-## How to install ##
-1) install Tampermonkey extension in your browser.
-2) Click on anti_rgpd.user.js then click on "raw" button.
-3) Tampermonkey should ask you to install the script, just click on "install" button.
+# Requirements
+You need [Tampermonkey](https://tampermonkey.net/) or [Greasemonkey](https://www.greasespot.net/) extension installed in your browser (Firefox/chrome...)
 
+
+# How to install
+To install the script, just [click here](https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js) and Tampermonkey (or Greasemonkey) should ask you to install id.
