@@ -6,6 +6,7 @@
 // @grant       GM.listValues
 // @grant       GM.deleteValue
 // @grant       GM.xmlHttpRequest
+// @grant       GM.info
 // @updateURL   https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js
 // @downloadURL https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js
 // @include     *
@@ -113,7 +114,7 @@ async function clear_rgpd() {
 
 function log(string) {
     if (_debug){
-        console.log("AntiRGPD: " + string);
+        console.log("AntiRGPD(v"+GM.info.script.version+"): " + string);
     }
 
 }
