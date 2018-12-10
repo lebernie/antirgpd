@@ -1,8 +1,10 @@
 // ==UserScript==
 // @name        Anti RGPD
-// @version     2
+// @version     3
 // @grant       GM.setValue
 // @grant       GM.getValue
+// @grant       GM.listValues
+// @grant       GM.deleteValue
 // @grant       GM.xmlHttpRequest
 // @updateURL   https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js
 // @downloadURL https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js
@@ -10,22 +12,43 @@
 // ==/UserScript==
 
 var _conf = null;
+var _debug = true;
 
 async function load_conf() {
     return new Promise(async function(resolve, reject) {
+       
+        var last_update = await GM.getValue("antiRGPD_last_update");
+        if (last_update){
+            var now = new Date();
+            var nbrday = Math.trunc(Math.abs(new Date(last_update) - new Date(now)) / 86400000);
+            log("conf file is " + nbrday + " day old");
+            if (nbrday > 0){
+                log("conf is too old");
+                GM.deleteValue("antiRGPD_config");
+
+            }else{
+                log("conf is up to date");
+            }
+        }
+        else{
+            await GM.deleteValue("antiRGPD_config");
+        }
+
         var conf = await GM.getValue("antiRGPD_config");
         if (!conf) {
-            log("conf not found");
+            log("downloading latest conf...");
             GM.xmlHttpRequest({
                 method: "GET",
                 url: "https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.json",
                 onload: function(response) {
                     GM.setValue("antiRGPD_config", response.responseText);
+                    GM.setValue("antiRGPD_last_update", new Date());
+                    log("conf downloaded : " + response.responseText);
                     resolve(response.responseText);
                 }
             });
         } else {
-            log("conf found");
+            log("load stored conf");
             resolve(conf);
         }
     });
@@ -66,27 +89,30 @@ async function clear_rgpd() {
 
 
 (async () => {
+    log("start");
     var json_conf = await load_conf();
     if (json_conf) {
-      log("start");
+        
         _conf = JSON.parse(json_conf);
         var observer = new MutationObserver(async function(mutationsList, observer){
             await clear_rgpd();
         });
         observer.observe(document.body, { attributes: true, childList: true, subtree: true});
         setTimeout(function() {
-          observer.disconnect();
-          log("stop");
-      }, 10000);
+            observer.disconnect();
+            log("stop");
+        }, 10000);
     } else {
         log("Conf file problem")
     }
+
 })();
 
 
 
 function log(string) {
-
-    console.log("AntiRGPD: " + string);
+    if (_debug){
+        console.log("AntiRGPD: " + string);
+    }
 
 }
