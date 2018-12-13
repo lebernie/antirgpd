@@ -9,7 +9,8 @@
       "obs_cnil":[],
       "truste_box_overlay":[],
       "truste_overlay":[],
-      "cookiesBannerWrap":[]
+      "cookiesBannerWrap":[],
+      "popup-overlay":[]
    },
    "div_to_delete":{
       "cookie-notice":[],
