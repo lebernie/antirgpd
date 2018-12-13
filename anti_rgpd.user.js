@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Anti RGPD
-// @version     6
+// @version     7
 // @grant       GM.setValue
 // @grant       GM.getValue
 // @grant       GM.listValues
@@ -94,29 +94,49 @@
                 self.g_json_conf = JSON.parse(await self.load_conf());
             }
 
-            self.g_json_conf.class_to_remove.forEach(function (element) {
-                var elements = document.getElementsByClassName(element);
-                for (let item of elements) {
-                    log("remove class " + element);
-                    item.classList.remove(element);
+            Object.keys(self.g_json_conf.class_to_remove).forEach(function (element) {                
+                if (self.should_filter(self.g_json_conf.class_to_remove[element])){
+                    var elements = document.getElementsByClassName(element);
+                    for (let item of elements) {
+                        log("remove class " + element);
+                        item.classList.remove(element);
+                    }
                 }
 
             });
-            self.g_json_conf.class_to_delete.forEach(function (element) {
-                var elements = document.getElementsByClassName(element);
-                for (let item of elements) {
-                    log("delete element by class " + element);
-                    item.parentNode.removeChild(item);
+            Object.keys(self.g_json_conf.class_to_delete).forEach(function (element) {
+                if (self.should_filter(self.g_json_conf.class_to_delete[element])){
+                    var elements = document.getElementsByClassName(element);
+                    for (let item of elements) {
+                        log("delete element by class " + element);
+                        item.parentNode.removeChild(item);
+                    }
                 }
             });
-            self.g_json_conf.div_to_delete.forEach(function (element) {
-                var elem_to_delete = document.getElementById(element);
-                if (elem_to_delete != null) {
-                    log("delete element by id " + element);
-                    elem_to_delete.parentNode.removeChild(elem_to_delete);
+            Object.keys(self.g_json_conf.div_to_delete).forEach(function (element) {
+                if (self.should_filter(self.g_json_conf.div_to_delete[element])){
+                    var elem_to_delete = document.getElementById(element);
+                    if (elem_to_delete != null) {
+                        log("delete element by id " + element);
+                        elem_to_delete.parentNode.removeChild(elem_to_delete);
+                    }
                 }
             });
         },
+        should_filter: function(urls){
+            var href = window.location.href;
+            var filter = urls.length == 0;
+
+            for (let i = 0; (i < urls.length) && !filter; i++){
+                let url = urls[i];
+                filter = new RegExp(url.replace(/\*/g, '([^*]+)'), 'g').test(href);
+                if(filter){
+                    log(href + " matches " + url);
+                }
+
+            }
+            return filter;
+        }
     }
     function log(string) {
         var self = this;
