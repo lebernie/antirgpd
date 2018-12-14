@@ -10,7 +10,8 @@
       "truste_box_overlay":[],
       "truste_overlay":[],
       "cookiesBannerWrap":[],
-      "popup-overlay":[]
+      "popup-overlay":[],
+      "didomi-popup":[]
    },
    "div_to_delete":{
       "cookie-notice":[],
