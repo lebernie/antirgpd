@@ -21,7 +21,7 @@
     var AntiRGPD = {
         g_json_conf_url: "https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.json",
         g_json_conf: null,
-        g_stop_after_ms: 10000, //stop script after 10s
+        g_stop_after_ms: 25000, //stop script after 10s
         g_refresh_every_ms: 7200000, //refresh conf every 2 hours
 
         init: async function () {
@@ -131,7 +131,7 @@
                 let url = urls[i];
                 filter = new RegExp(url.replace(/\*/g, '([^*]+)'), 'g').test(href);
                 if(filter){
-                    log(href + " matches " + url);
+                    log(href + " matches " + url);                    
                 }
 
             }
