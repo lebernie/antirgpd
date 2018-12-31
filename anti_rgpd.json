@@ -1,7 +1,8 @@
 {
    "class_to_remove":{
       "qc-cmp-ui-showing":[],
-      "nsc":[]
+      "nsc":[],
+      "u-overflowHidden":[]
    },
    "class_to_delete":{
       "qc-cmp-ui-container":[],
@@ -11,7 +12,8 @@
       "truste_overlay":[],
       "cookiesBannerWrap":[],
       "popup-overlay":[],
-      "gb_Ea":[]
+      "gb_Ea":[],
+      "overlay--lighter":[]
    },
    "div_to_delete":{
       "cookie-notice":[],
