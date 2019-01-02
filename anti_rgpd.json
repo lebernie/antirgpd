@@ -31,6 +31,8 @@
       "didomi-popup":[],
       "consent-bump":[],
       "_evidon_banner":[],
-      "showDisclaimer":[]
+      "showDisclaimer":[],
+      "adblock_screen": [],
+      "eu-cookie-law":[]
    }
 }
