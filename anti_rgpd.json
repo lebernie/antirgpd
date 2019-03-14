@@ -15,7 +15,8 @@
       "gb_Ea":[],
       "overlay--lighter":[],
       "truste_box_overlay": [],
-      "truste_overlay": []
+      "truste_overlay": [],
+      "app_gdpr--2k2uB": []
    },
    "div_to_delete":{
       "cookie-notice":[],
@@ -36,6 +37,6 @@
       "showDisclaimer":[],
       "adblock_screen": [],
       "eu-cookie-law":[],
-      "divcookie":[]
+      "divcookie":[]      
    }
 }
