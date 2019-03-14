@@ -2,7 +2,8 @@
    "class_to_remove":{
       "qc-cmp-ui-showing":[],
       "nsc":[],
-      "u-overflowHidden":[]
+      "u-overflowHidden":[],
+      "didomi-consent-popup-open":[]
    },
    "class_to_delete":{
       "qc-cmp-ui-container":[],
@@ -37,6 +38,7 @@
       "showDisclaimer":[],
       "adblock_screen": [],
       "eu-cookie-law":[],
-      "divcookie":[]      
+      "divcookie":[],
+      "didomi-host":[]
    }
 }
