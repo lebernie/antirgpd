@@ -39,6 +39,8 @@
       "adblock_screen": [],
       "eu-cookie-law":[],
       "divcookie":[],
-      "didomi-host":[]
+      "didomi-host":[],
+      "overlay": ["voyageforum.com"],
+      "overlay-back":["voyageforum.com"]
    }
 }
