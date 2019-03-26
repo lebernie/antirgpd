@@ -39,6 +39,7 @@
       "divcookie":[],
       "didomi-host":[],
       "overlay": ["voyageforum.com"],
-      "overlay-back":["voyageforum.com"]
+      "overlay-back":["voyageforum.com"],
+      "cookies_header":[]
    }
 }
