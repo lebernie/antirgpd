@@ -15,7 +15,8 @@
       "popup-overlay":[],
       "gb_Ea":[],
       "overlay--lighter":[],
-      "app_gdpr--2k2uB": []
+      "app_gdpr--2k2uB": [],
+      "optanon-alert-box-wrapper":[]
    },
    "div_to_delete":{
       "cookie-notice":[],
@@ -40,6 +41,7 @@
       "didomi-host":[],
       "overlay": ["voyageforum.com"],
       "overlay-back":["voyageforum.com"],
-      "cookies_header":[]
+      "cookies_header":[],
+      "optanon":[]
    }
 }
