@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Anti RGPD
-// @version     10
+// @version     11
 // @grant       GM.setValue
 // @grant       GM.getValue
 // @grant       GM.listValues
@@ -100,6 +100,11 @@
                     for (let item of elements) {
                         log("remove class " + element);
                         item.classList.remove(element);
+                        if (item.style.overflow == "hidden"){
+                            log("element has overflow:hidden, removing it");
+                            item.style.removeProperty("overflow");
+                        }
+                        
                     }
                 }
 
