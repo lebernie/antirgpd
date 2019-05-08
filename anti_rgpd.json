@@ -3,7 +3,8 @@
       "qc-cmp-ui-showing":[],
       "nsc":[],
       "u-overflowHidden":[],
-      "didomi-consent-popup-open":[]
+      "didomi-consent-popup-open":[],
+      "page--noScroll":[]
    },
    "class_to_delete":{
       "qc-cmp-ui-container":[],
@@ -16,7 +17,8 @@
       "gb_Ea":[],
       "overlay--lighter":[],
       "app_gdpr--2k2uB": [],
-      "optanon-alert-box-wrapper":[]
+      "optanon-alert-box-wrapper":[],
+      "js-cookiesModal":[]
    },
    "div_to_delete":{
       "cookie-notice":[],
