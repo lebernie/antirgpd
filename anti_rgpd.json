@@ -18,7 +18,8 @@
       "overlay--lighter":[],
       "app_gdpr--2k2uB": [],
       "optanon-alert-box-wrapper":[],
-      "js-cookiesModal":[]
+      "js-cookiesModal":[],
+      "modal-backdrop":[]
    },
    "div_to_delete":{
       "cookie-notice":[],
@@ -44,6 +45,7 @@
       "overlay": ["voyageforum.com"],
       "overlay-back":["voyageforum.com"],
       "cookies_header":[],
-      "optanon":[]
+      "optanon":[],
+      "modal-gdpr":[]
    }
 }
