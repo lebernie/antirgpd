@@ -4,7 +4,8 @@
       "nsc":[],
       "u-overflowHidden":[],
       "didomi-consent-popup-open":[],
-      "page--noScroll":[]
+      "page--noScroll":[],
+      "no-overflow":[]
    },
    "class_to_delete":{
       "qc-cmp-ui-container":[],
@@ -19,7 +20,9 @@
       "app_gdpr--2k2uB": [],
       "optanon-alert-box-wrapper":[],
       "js-cookiesModal":[],
-      "modal-backdrop":[]
+      "modal-backdrop":[],
+      "cookie-policy-popup":[],
+      "cookie-policy-popup-backdrop":[]
    },
    "div_to_delete":{
       "cookie-notice":[],
