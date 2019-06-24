@@ -4,7 +4,8 @@
       "nsc":[],
       "u-overflowHidden":[],
       "didomi-consent-popup-open":[],
-      "page--noScroll":[]
+      "page--noScroll":[],
+      "no-overflow":[]
    },
    "class_to_delete":{
       "qc-cmp-ui-container":[],
@@ -20,7 +21,9 @@
       "optanon-alert-box-wrapper":[],
       "js-cookiesModal":[],
       "modal-backdrop":[],
-      "as-oil light": ["https://www.numerama.com"]
+      "as-oil light": ["https://www.numerama.com"],
+      "cookie-policy-popup":[],
+      "cookie-policy-popup-backdrop":[]
    },
    "div_to_delete":{
       "cookie-notice":[],
