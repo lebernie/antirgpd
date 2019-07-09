@@ -23,7 +23,8 @@
       "modal-backdrop":[],
       "as-oil light": ["https://www.numerama.com"],
       "cookie-policy-popup":[],
-      "cookie-policy-popup-backdrop":[]
+      "cookie-policy-popup-backdrop":[],
+      "gdpr_popup_wrap":[]
    },
    "div_to_delete":{
       "cookie-notice":[],
