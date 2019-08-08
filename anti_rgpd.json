@@ -5,7 +5,8 @@
       "u-overflowHidden":[],
       "didomi-consent-popup-open":[],
       "page--noScroll":[],
-      "no-overflow":[]
+      "no-overflow":[],
+      "js-homepage homepage":["castorama.fr"]
    },
    "class_to_delete":{
       "qc-cmp-ui-container":[],
