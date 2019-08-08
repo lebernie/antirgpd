@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Anti RGPD
-// @version     11
+// @version     12
 // @grant       GM.setValue
 // @grant       GM.getValue
 // @grant       GM.listValues
