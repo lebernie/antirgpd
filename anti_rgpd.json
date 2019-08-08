@@ -24,7 +24,8 @@
       "as-oil light": ["https://www.numerama.com"],
       "cookie-policy-popup":[],
       "cookie-policy-popup-backdrop":[],
-      "gdpr_popup_wrap":[]
+      "gdpr_popup_wrap":[],
+      "gdpr-modal-rider":[]
    },
    "div_to_delete":{
       "cookie-notice":[],
@@ -51,6 +52,7 @@
       "overlay-back":["voyageforum.com"],
       "cookies_header":[],
       "optanon":[],
-      "modal-gdpr":[]
+      "modal-gdpr":[],
+      "js-modal-overlay":["castorama.fr"]
    }
 }
