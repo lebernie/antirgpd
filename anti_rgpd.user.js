@@ -94,17 +94,41 @@
                 self.g_json_conf = JSON.parse(await self.load_conf());
             }
 
+
+
+            Object.keys(self.g_json_conf.class_where_remove_overflow).forEach(function (element) {                
+                if (self.should_filter(self.g_json_conf.class_where_remove_overflow[element])){
+                    var elements = document.getElementsByClassName(element);
+                    for (let item of elements) {
+                        if (item.style.overflow == "hidden"){
+                            log("element has overflow:hidden, removing it");
+                            item.style.removeProperty("overflow");
+                        }
+                        
+                    }
+                }
+            });
+
+            Object.keys(self.g_json_conf.div_where_remove_overflow).forEach(function (element) {                
+                if (self.should_filter(self.g_json_conf.div_where_remove_overflow[element])){
+                    var item = document.getElementById(element);
+                    if (item.style.overflow == "hidden"){
+                        log("element has overflow:hidden, removing it");
+                        item.style.removeProperty("overflow");
+                    }
+                }
+            });
+
             Object.keys(self.g_json_conf.class_to_remove).forEach(function (element) {                
                 if (self.should_filter(self.g_json_conf.class_to_remove[element])){
                     var elements = document.getElementsByClassName(element);
                     for (let item of elements) {
                         log("remove class " + element);
                         item.classList.remove(element);
-                        if (item.style.overflow == "hidden"){
-                            log("element has overflow:hidden, removing it");
-                            item.style.removeProperty("overflow");
-                        }
-                        
+                        // if (item.style.overflow == "hidden"){
+                        //     log("element has overflow:hidden, removing it");
+                        //     item.style.removeProperty("overflow");
+                        // }
                     }
                 }
 
