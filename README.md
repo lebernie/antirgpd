@@ -3,4 +3,4 @@ You need [Tampermonkey](https://tampermonkey.net/) or [Greasemonkey](https://www
 
 
 # How to install
-To install the script, just [click here](https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js) and Tampermonkey (or Greasemonkey) should ask you to install it.
+To install the script, just [click here](https://github.com/lebernie/antirgpd/raw/lebernie_test/anti_rgpd.user.js) and Tampermonkey (or Greasemonkey) should ask you to install it.

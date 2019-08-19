@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name        Anti RGPD
-// @version     12
+// @version     999.1
 // @grant       GM.setValue
 // @grant       GM.getValue
 // @grant       GM.listValues
 // @grant       GM.deleteValue
 // @grant       GM.xmlHttpRequest
 // @grant       GM.info
-// @updateURL   https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js
-// @downloadURL https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js
+// @updateURL   https://raw.githubusercontent.com/lebernie/antirgpd/lebernie_test/anti_rgpd.user.js
+// @downloadURL https://raw.githubusercontent.com/lebernie/antirgpd/lebernie_test/anti_rgpd.user.js
 // @noframes
 // @include     *
 // ==/UserScript==
@@ -19,7 +19,7 @@
     var g_debug = true;
 
     var AntiRGPD = {
-        g_json_conf_url: "https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.json",
+        g_json_conf_url: "https://raw.githubusercontent.com/lebernie/antirgpd/lebernie_test/anti_rgpd.json",
         g_json_conf: null,
         g_stop_after_ms: 25000, //stop script after 10s
         g_refresh_every_ms: 7200000, //refresh conf every 2 hours

@@ -4,6 +4,6 @@
 // @grant       GM.setValue
 // @grant       GM.getValue
 // @grant       GM.xmlHttpRequest
-// @updateURL   https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js
-// @downloadURL https://raw.githubusercontent.com/jeanbrochefort/antirgpd/master/anti_rgpd.user.js
+// @updateURL   https://raw.githubusercontent.com/lebernie/antirgpd/lebernie_test/anti_rgpd.user.js
+// @downloadURL https://raw.githubusercontent.com/lebernie/antirgpd/lebernie_test/anti_rgpd.user.js
 // ==/UserScript==
