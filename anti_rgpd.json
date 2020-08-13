@@ -5,7 +5,8 @@
       "u-overflowHidden":[],
       "didomi-consent-popup-open":[],
       "page--noScroll":[],
-      "no-overflow":[]      
+      "no-overflow":[],
+      "didomi-popup-open":[]
    },
    "class_to_delete":{
       "qc-cmp-ui-container":[],
